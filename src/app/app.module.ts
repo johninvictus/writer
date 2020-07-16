@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
+import {QuillModule} from 'ngx-quill';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CKEditorModule
+    CKEditorModule,
+    QuillModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,13 @@ import {ChangeEvent} from '@ckeditor/ckeditor5-angular';
 })
 export class OneComponent implements OnInit {
 
+  /**
+   *  CKEditor
+   *
+   *  Seems complex and somehow not maintainable
+   *
+   *  stars *** 3/5
+   */
   ckEditor = ClassicEditor;
 
   constructor() {
@@ -19,7 +26,6 @@ export class OneComponent implements OnInit {
 
   editorChange({editor}: ChangeEvent) {
     const data = editor.getData();
-    console.error(data);
   }
 
 }
